@@ -1,9 +1,13 @@
-# mokara.4
-
 1. To compile use make
-$ make
-gcc -Wall -Werror -g -o master master.c -lpthread
-gcc -Wall -Werror -g -o palin palin.c -lpthread
 
+$ make
+	gcc oss.c -o oss
+	gcc user.c -o user
+  
 2. To execute:
-$ ./master -n 20 strings.txt
+
+$ ./oss -n 20 osslog.txt
+
+For clean:
+	/bin/rm -f *.o oss user osslog.txt 
+
